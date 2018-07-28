@@ -41,6 +41,55 @@ Check the [initial files ](https://github.com/taboca/doc-js-example-create-react
 
 Similarly to the article by Heyse Li [1], this example focuses in Android; which explains why we are not bringing the XCode and other infrastructure necessary to generate IOS apps. To understand the dependencies necessary to build React-native -based apps for Android (or even IOS) please see [Getting Started -> Building Projects with Native Code](https://facebook.github.io/react-native/docs/getting-started.html) [3].
 
+# Preparing for Jest and Appium
+
+```
+npm install --save-dev  appium appium-doctor
+```
+
+After these modules installed, you will have to update your package.json script section:
+
+```
+"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"appium": "appium",
+		"appium:doctor": "appium-doctor"
+	},
+```
+
+With that, run:
+
+```
+npm run appium:doctor
+```
+
+As you run the above, it may generate some warnings requesting you to perform actions, such as the necessary environment variables (JAVA_HOME, ANDROID_HOME, etc). According to [1], since we are working with Android, we can safely ignore the warning "WARN AppiumDoctor  ✖ Carthage was NOT found!".
+
+## Installing web driver
+
+```
+npm install --save-dev wd
+```
+
+## Running appium
+
+```
+npm run appium
+```
+
+This should bring up the Appium server in your localhost computer (0.0.0.0:4723). In my case, since I am using the same shell, I have put it in background.
+
+## Running the device
+
+```
+adb devices
+```
+
+Pick the name of your device.  Alternativelly you may well establish your testing system using emulators. For additional information check [Start the emulator from the command line](https://developer.android.com/studio/run/emulator-commandline) [4].
+
+
+
 
 # References
 
