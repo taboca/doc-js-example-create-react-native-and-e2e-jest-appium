@@ -64,7 +64,7 @@ With that, run:
 npm run appium:doctor
 ```
 
-As you run the above, it may generate some warnings requesting you to perform actions, such as the necessary environment variables (JAVA_HOME, ANDROID_HOME, etc). According to [1], since we are working with Android, we can safely ignore the warning "WARN AppiumDoctor  ✖ Carthage was NOT found!".
+As you run the above, it may generate some warnings requesting you to perform actions, such as the necessary environment variables (JAVA_HOME, ANDROID_HOME, etc). According to [1], since we are working with Android, we can safely ignore the warning "WARN AppiumDoctor ✖ Carthage was NOT found!".
 
 ## Installing web driver
 
@@ -86,7 +86,7 @@ This should bring up the Appium server in your localhost computer (0.0.0.0:4723)
 adb devices
 ```
 
-Pick the name of your device.  Alternativelly you may well establish your testing system using emulators. For additional information check [Start the emulator from the command line](https://developer.android.com/studio/run/emulator-commandline) [4].
+Pick the name of your device and keep it as you will soon add this reference in your test instructions file.  Alternativelly you may well establish your testing system using emulators. For additional information check [Start the emulator from the command line](https://developer.android.com/studio/run/emulator-commandline) [4].
 
 
 
