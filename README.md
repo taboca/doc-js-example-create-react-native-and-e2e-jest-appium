@@ -137,6 +137,7 @@ Keep it in background if you want the same shell available.
 cd android/
 ./gradlew assembleRelease
 cd ..
+react-native run-android
 ```
 
 ## Edit your App.js
