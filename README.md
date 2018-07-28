@@ -38,3 +38,16 @@ npm run eject
 The above should transform your "create-react-native-app" style project in a regular React Native project.
 
 Check the [initial files ](https://github.com/taboca/doc-js-example-create-react-native-and-e2e-jest-appium/commit/bf6beecd1a09f44f8a6b3c4d610d2ce4c0203097) after ejecting.
+
+Similarly to the article by Heyse Li [1], this example focuses in Android; which explains why we are not bringing the XCode and other infrastructure necessary to generate IOS apps. To understand the dependencies necessary to build React-native -based apps for Android (or even IOS) please see [Getting Started -> Building Projects with Native Code](https://facebook.github.io/react-native/docs/getting-started.html) [3].
+
+
+# References
+
+* [1](https://medium.com/front-end-hacking/how-to-do-end-to-end-e2e-testing-for-react-native-android-using-jest-and-appium-27d75e4d831b)
+
+* [2](https://www.mountaingoatsoftware.com/blog/the-forgotten-layer-of-the-test-automation-pyramid)
+
+* [3](https://facebook.github.io/react-native/docs/getting-started.html)
+
+* [4](https://developer.android.com/studio/run/emulator-commandline)
