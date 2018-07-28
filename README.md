@@ -1,6 +1,6 @@
 # Introduction
 
-In this article, we will take a project created with "create-react-native-app" and enable E2E (end-to-end) tests to it. In order to do this, we will **eject** from the default setup created by "create-react-native-app". 
+In this article, we will take a project created with "create-react-native-app" and enable E2E (end-to-end) tests to it. In order to do this, we will **eject** from the default setup created by "create-react-native-app".
 
 Once we do that, we will then prepare Jest and Appium projects to have our end to end testing system working. In case you don't know, E2E tests are the kind of tests that brings up the whole application (in the emulator or in a device) and performs tests over the user interface. These kinds of tests are more intensive, or expensive, according to Mike Cohn's pyramid [2].  
 
@@ -36,3 +36,5 @@ npm run eject
 ```
 
 The above should transform your "create-react-native-app" style project in a regular React Native project.
+
+Check the [initial files ](https://github.com/taboca/doc-js-example-create-react-native-and-e2e-jest-appium/commit/bf6beecd1a09f44f8a6b3c4d610d2ce4c0203097) after ejecting.
