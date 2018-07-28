@@ -125,8 +125,63 @@ test('appium button click', async () => {
 
 ```
 
+## Start React Native run server and run your tests  
 
+```
+react-native start
+```
 
+Keep it in background if you want the same shell available.
+
+```
+cd android/
+./gradlew assembleRelease
+cd ..
+```
+
+## Edit your App.js
+
+```
+import React from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
+
+export default class App extends React.Component {
+
+  state = {
+   counter: 0
+ }
+
+ onPress = () => this.setState({ counter: this.state.counter + 1 })
+
+  render() {
+    return (
+      <View style={styles.container} accessibilityLabel="testview">
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text accessibilityLabel="counter">{this.state.counter}</Text>
+        <Button onPress={this.onPress} title="Press me" accessibilityLabel="button" />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+```
+
+## Run test
+
+```
+npm run test
+```
 
 # References
 
