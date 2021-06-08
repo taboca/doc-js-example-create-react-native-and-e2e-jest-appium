@@ -1,4 +1,4 @@
-# Introduction
+# Study notes - React Create app with Jest
 
 In this article, we will take a project created with "create-react-native-app" and enable E2E (end-to-end) tests to it. In order to do this, we will **eject** from the default setup created by "create-react-native-app".
 
